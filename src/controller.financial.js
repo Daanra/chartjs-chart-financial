@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-import {BarController} from 'chart.js';
+import {BarController, Chart} from 'chart.js';
 import {clipArea, isNullOrUndef, unclipArea} from 'chart.js/helpers';
 
 /**
