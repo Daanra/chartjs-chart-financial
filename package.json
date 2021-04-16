@@ -1,7 +1,8 @@
 {
   "name": "chartjs-chart-financial",
   "description": "Chart.js module for charting financial securities",
-  "main": "src/index.js",
+  "main": "dist/chartjs-chart-financial.min.js",
+  "module": "dist/chartjs-chart-financial.esm.js",
   "version": "0.1.0",
   "license": "MIT",
   "repository": {
