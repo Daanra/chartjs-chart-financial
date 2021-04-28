@@ -47,7 +47,7 @@ module.exports = [
 		],
 	},
 	{
-		input: 'src/index.js',
+		input: 'src/index.esm.js',
 		output: {
 			file: pkg.module,
 			banner: banner,
