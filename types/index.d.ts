@@ -1,8 +1,10 @@
 import {
+  BarController,
   BarControllerChartOptions,
   BarControllerDatasetOptions,
   CartesianScaleTypeRegistry,
-  DatasetController
+  Chart,
+  ChartComponent
 } from 'chart.js';
 
 declare module 'chart.js' {
@@ -37,8 +39,15 @@ declare module 'chart.js' {
   }
 }
 
-declare const CandlestickController: DatasetController;
-declare const OhlcController: DatasetController;
+declare const CandlestickController: ChartComponent & {
+  prototype: BarController;
+  new(chart: Chart, datasetIndex: number): BarController;
+};
+declare const OhlcController: ChartComponent & {
+  prototype: BarController;
+  new(chart: Chart, datasetIndex: number): BarController;
+};
+
 declare const CandlestickElement: Element;
 declare const OhlcElement: Element;
 
