@@ -20,7 +20,6 @@ plugins: ['html', 'es']
 
 
 rules:
-  indent: ["error", "tab"]
   class-methods-use-this: "off"
   complexity: ["warn", 10]
   indent: ["error", "tab"]
