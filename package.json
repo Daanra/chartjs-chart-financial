@@ -10,10 +10,6 @@
     "type": "git",
     "url": "https://github.com/chartjs/chartjs-chart-financial.git"
   },
-  "files": [
-    "dist/*.js",
-    "types/*.d.ts"
-  ],
   "scripts": {
     "build": "rollup -c && cp dist/chartjs-chart-financial.js docs/",
     "lint": "eslint docs/**/*.html src/**/*.js test/**/*.js",
